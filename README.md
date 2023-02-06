@@ -3,7 +3,8 @@ test-scrapping-jumia
 
 comment lier une base de donne MySQL SERVER lancer MICROSOFT SQL SERVER MANAGEMENT STUDIO Creer une nouvelle requête et inscrivez les code sql ci-dessous:
 
-################ CREATION DE LA BASE DE DONNEES ################################ CREATE DATABASE <votre_base>
+################ CREATION DE LA BASE DE DONNEES ################################ 
+CREATE DATABASE <votre_base>
 
 #################### CREATION DES TABLES ###############################
 

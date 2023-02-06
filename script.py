@@ -22,13 +22,12 @@ categorie = soup.find_all("a", class_="-gy5 -hov-m -hov-gy8")
 base = "https://www.jumia.ci/"
 urls =[]
 for category_name in categorie :
-    # cursor.execute("INSERT INTO categorie (category_name) VALUES (?)", category_name.text)
+    cursor.execute("INSERT INTO categorie (category_name) VALUES (?)", category_name.text)
     b = base + category_name.text
     urls.append(b)
-# conn.commit()
+conn.commit()
 
 count = 0
-I = 0
 for url in urls:
     while True:
      link = requests.get(url)
