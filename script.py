@@ -35,7 +35,6 @@ for url in urls:
      soup1 = BeautifulSoup(link.content, "html.parser")
      produits = soup1.find_all('a',class_ = "core")
      nextpage = soup1.find('a',class_ = 'pg', attrs= {"aria-label":"page suivante"})
-    
      
 
      for produit in produits:
